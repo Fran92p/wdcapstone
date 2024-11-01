@@ -28,6 +28,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding-top: 10px;
 }
 
 nav a {
@@ -35,10 +36,14 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    color: #e9c46a;
+    background-color: #e9c46a;
+    color: #264653;
 }
 
 main {

@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #2a9d8f;
+    background-color: #091f5a;
     padding: 20px;
     text-align: center;
 }
@@ -68,7 +68,7 @@ p {
 }
 
 #servicios h2 {
-    color: #2a9d8f;
+    color: #091f5a;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -100,7 +100,7 @@ p {
 }
 
 #nosotros h2 {
-    color: #2a9d8f;
+    color: #091f5a;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }

@@ -67,19 +67,30 @@ p {
     padding: 40px 20px;
 }
 
+#servicios {
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 #servicios h2 {
     color: #2042EA;
     font-size: 2.5rem;
     margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 .servicio {
     background-color: #F8D7E0;
     padding: 20px;
-    margin: 15px auto;
     border-radius: 8px;
-    max-width: 400px;
+    width: calc(33.333% - 20px); 
     box-shadow: 0 4px 8px rgba(9, 31, 90, 0.1);
+    text-align: center;
 }
 
 .servicio h3 {
@@ -185,4 +196,16 @@ footer {
     margin: 0 auto;
     line-height: 1.5;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); 
+}
+
+@media (max-width: 768px) {
+    .servicio {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .servicio {
+        width: 100%; 
+    }
 }

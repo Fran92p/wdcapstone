@@ -71,6 +71,10 @@
                 <h3>Láser terapia.</h3>
                 <p></p>
             </div>
+            <div class="servicio">
+                <h3>Odontopediatria.</h3>
+                <p></p>
+            </div>
 
         </section>
 
@@ -82,10 +86,36 @@
                 <p>Experta en ortodoncia y estética dental, brindando sonrisas hermosas y funcionales.</p>
             </div>
         </section>
+
+      
     </main>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contacto-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="form-mensaje"></p> <!-- Mensaje de error o éxito -->
+    </section>
+    
 
     <footer>
         <p>&copy; 2024 Clínica Dental SmileCare</p>
     </footer>
+
+    <script src="/js/contacto.js"></script>
+
 </body>
 </html>

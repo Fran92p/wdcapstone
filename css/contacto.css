@@ -9,13 +9,13 @@
  }
  
  #contacto {
-    background-color: #f8d7e0;
+    background-color: #D7C2B3;
     padding: 60px 20px;
     text-align: center;
 }
 
 #contacto h2 {
-    color: #2042EA;
+    color: #091F5A;
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
@@ -24,10 +24,10 @@
 #contacto-form {
     max-width: 500px;
     margin: 0 auto;
-    background-color: #FFFFFF;
+    background-color: #F1F2EF;
     border: 2px solid #7094CC;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(5, 4, 4, 0.1);
+    box-shadow: 0 4px 10px (5, 4, 4, 0.1);
     padding: 20px 30px;
 }
 
@@ -51,7 +51,7 @@
 }
 
 #contacto-form button {
-    background-color: #2042EA; 
+    background-color: #091F5A; 
     color: #FFFFFF;
     font-size: 1rem;
     font-weight: bold;

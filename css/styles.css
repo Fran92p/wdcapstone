@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #091F5A;
-    background-color: #F8D7E0;
+    background-color: #D7C2B3;
 }
 
 header {
@@ -43,7 +43,7 @@ nav a {
 
 nav a:hover {
     background-color: #7094CC;
-    color: #F8D7E0;
+    color: #D7C2B3;
 }
 
 main {
@@ -63,7 +63,7 @@ p {
 }
 
 #servicios {
-    background-color: #FFFFFF;
+    background-color: #F1F2EF;
     padding: 40px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +72,7 @@ p {
 }
 
 #servicios h2 {
-    color: #2042EA;
+    color: #7094CC;
     font-size: 2.5rem;
     margin-bottom: 20px;
     width: 100%;
@@ -80,7 +80,7 @@ p {
 }
 
 .servicio {
-    background-color: #F8D7E0;
+    background-color: #D7C2B3;
     padding: 20px;
     border-radius: 8px;
     width: calc(33.333% - 20px); 
@@ -100,13 +100,13 @@ p {
 }
 
 #nosotros {
-    background-color: #F8D7E0;
+    background-color: #D7C2B3;
     padding: 40px 20px;
     text-align: center;
 }
 
 #nosotros h2 {
-    color: #2042EA;
+    color: #7094CC;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -156,7 +156,7 @@ footer {
     background-size: cover;
     background-position: center;
     padding: 120px 20px;
-    color: #f0f0f0;
+    color: #F1F2EF;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -241,7 +241,7 @@ footer {
 
 #contacto-form button {
     background-color: #2042EA;
-    color: #FFFFFF;
+    color: #F1F2EF;
     padding: 10px;
     border: none;
     border-radius: 4px;

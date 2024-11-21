@@ -149,12 +149,14 @@ footer {
     font-size: 0.9rem;
 }
 
+
+
 #inicio {
     background-image: url('/img/Fondo1.jpg'); 
     background-size: cover;
     background-position: center;
     padding: 120px 20px;
-    color: #FFFFFF;
+    color: #f0f0f0;
     text-align: center;
     display: flex;
     flex-direction: column;

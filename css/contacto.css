@@ -1,0 +1,75 @@
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+ }
+
+ body {
+    background-color: #091F5A; /
+ }
+ 
+ #contacto {
+    background-color: #f8d7e0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: #2042EA;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#contacto-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 2px solid #7094CC;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(5, 4, 4, 0.1);
+    padding: 20px 30px;
+}
+
+#contacto-form label {
+    display: block;
+    font-weight: bold;
+    color: #091F5A;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#contacto-form input,
+#contacto-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #7094CC;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+#contacto-form button {
+    background-color: #2042EA; 
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contacto-form button:hover {
+    background-color: #091F5A;
+    }
+
+    #form-mensaje {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 10px;
+        color: red;
+    }
+

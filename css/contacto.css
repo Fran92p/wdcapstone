@@ -1,12 +1,8 @@
-#error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 10px;
- }
-
  body {
-    background-color: #091F5A; /
- }
+    background-color: #091F5A;
+    font-family: Arial, sans-serif;
+    color: #091F5A;
+ } 
 
  h1 {
     background-color: #091F5A; 
@@ -16,28 +12,32 @@
     margin: 0; 
     padding: 10px 0; 
 }
-
  
- #contacto {
+#contacto {
     background-color: #D7C2B3;
     padding: 60px 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
-    text-align: center;
+    text-align: left;
+}
+ 
+#contacto-form-container {
+    max-width: 50%;
+    margin: 0 auto; 
+    text-align: center; 
 }
 
-#contacto h2 {
-    color: #091F5A;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-weight: bold;
+#contacto-form-container h2 {
+    font-size: 2rem; 
+    color: #091F5A; 
+    margin-bottom: 20px; 
 }
 
 #contacto-form {
     max-width: 50%;
-    margin: 0 ;
+    margin: 0 ;#0504041a
     background-color: #F1F2EF;
     border: 2px solid #7094CC;
     border-radius: 8px;

@@ -32,7 +32,7 @@ nav ul {
 }
 
 nav a {
-    color: #FFFFFF;
+    color: #F1F2EF;
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
@@ -59,7 +59,7 @@ h2 {
 
 p {
     font-size: 1.1rem;
-    color: #F8D7E0C;
+    color: #F1F2EF;
 }
 
 #servicios {
@@ -152,7 +152,8 @@ footer {
 
 
 #inicio {
-    background-image: url('/img/Fondo1.jpg'); 
+    background-image: url('/img/Portada.jpg'); 
+    margin-top: -20px;
     background-size: cover;
     background-position: center;
     padding: 120px 20px;

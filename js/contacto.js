@@ -35,3 +35,34 @@ document.getElementById("contacto-form").addEventListener("submit", function(eve
     mensajeError.style.color = "#2042EA";
     document.getElementById("contacto-form").reset();
 });
+
+// Función para cargar el clima actual
+document.addEventListener("DOMContentLoaded", () => {
+    const apiKey = "a7abe1f0f157e4ebfa63700815bd47bf";
+    const ciudad = "Montevideo"; // Cambia la ciudad si es necesario
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric&lang=es`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const climaDiv = document.getElementById("clima");
+
+            if (data.cod === 200) {
+                const iconoClima = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+
+                climaDiv.innerHTML = `
+                    <p><strong>Ciudad:</strong> ${data.name}</p>
+                    <p><strong>Temperatura:</strong> ${data.main.temp}°C</p>
+                    <p><strong>Humedad:</strong> ${data.main.humidity}%</p>
+                    <p><strong>Descripción:</strong> ${data.weather[0].description}</p>
+                    <img src="${iconoClima}" alt="${data.weather[0].description}" title="${data.weather[0].description}" />
+                `;
+            } else {
+                climaDiv.innerHTML = `<p>Error al obtener el clima: ${data.message}</p>`;
+            }
+        })
+        .catch(error => {
+            const climaDiv = document.getElementById("clima");
+            climaDiv.innerHTML = `<p>Error de conexión: ${error.message}</p>`;
+        });
+});

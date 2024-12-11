@@ -3,98 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Dental SmileCare</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>Contacto - Clínica Dental SmileCare</title>
+    <link rel="stylesheet" href="/css/contacto.css">
 </head>
 <body>
     <header>
-        <h1>Clínica Dental SmileCare</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <h1>Contáctanos</h1>
     </header>
+    <section id="contacto">
+        <div id="contacto-form-container">
+            <h2>Formulario de Contacto</h2> 
+            <form id="contacto-form" action="https://api-contactos.onrender.com/contactos" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="form-mensaje"></p>
+            <div id="instagram-link">
+                <a href="https://www.instagram.com/dra.belenpais/profilecard/?igsh=ZXM3dG56ejJkb3Y3" target="_blank">
+                    Visítanos en Instagram
+                </a>
+            </div>
+        </div>
 
-    <main>
-        <section id="inicio">
-            <h2>Bienvenidos</h2>
-            <p>Mi misión está en contribuir a las personas para que logren una mejor salud bucal. Está comprobado que tener una boca saludable mejora la autoestima de las personas, por esta razón estoy en cada detalle, brindando una atención cálida, personalizada y con tecnología de vanguardia para optimizar los procesos y mejorar la experiencia de mis pacientes, mejorando tanto su estética como su salud bucal, para que puedan sentirse cómodos y a gusto.</p>
-        </section>
-
-        <section id="servicios">
-            <h2>Nuestros Servicios</h2>
-            <div class="servicio">
-                <h3>Diagnóstico integral.</h3>
-                <p>Atencion primaria, entregándole al paciente un servicio odontológuico integral, desde la prevención hasta el tratamiento precoz y la reabilitación global.</p>
+        <div id="info-container">
+            <div id="mapa-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.8730958935744!2d-56.1468723!3d-34.9092705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81128edcecf7%3A0xb267d9f77c13f719!2sPedro%20Fco.%20Berro%201295%2C%2011300%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay!5e0!3m2!1ses!2sus!4v1697047498416!5m2!1ses!2sus"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                ></iframe>
             </div>
-            <div class="servicio">
-                <h3>Detartrajes y profilaxis.</h3>
-                <p>Eliminar la placa bacteriana y el sarro, así cómo también prevenir enfermedades bucales y mantener tus dientes brillantes y saludables.
-                </p>
+            <div id="clima-container">
+                <h3>Clima Actual</h3>
+                <div id="clima">
+                    <p>Cargando clima...</p>
+                </div>
             </div>
-            <div class="servicio">
-                <h3>Rehabilitación oral y dental.</h3>
-                <p>Restaurar la estética y función de tus piezas dentales y toda tu boca.</p>
-            </div>
-            <div class="servicio">
-                <h3>Ortodoncia y alineadores.</h3>
-                <p>Estudio, prevención, diagnóstico y tratamiento de las anomalías de forma, posición, relación y función de las estructuras dentomaxilofaciales.</p>
-            </div>
-            <div class="servicio">
-                <h3>Ortopedia.</h3>
-                <p>Diagnosticar, prevenir, controlar y tratar los problemas de crecimiento y desarrollo de la. Ara y maxilares</p>
-            </div>
-            <div class="servicio">
-                <h3>Bruxismo y tratamiento oclusal.</h3>
-                <p>Tratar los problemas articulares, musculares y bruxismo.</p>
-            </div>
-            <div class="servicio">
-                <h3>Implantes.</h3>
-                <p>Tratamiento que sustituye la raíz de la pieza ausente y no solo la corona como las prótesis convencionales.</p>
-            </div>
-            <div class="servicio">
-                <h3>Prótesis.</h3>
-                <p>Sustituto artificial a una estructura del organismo pérdida, en este caso más específicamente dientes y hueso que brinda soporte a los labios, así como funciones que se pierden al faltar los órganos dentales.</p>
-            </div>
-            <div class="servicio">
-                <h3>Blanqueamiento.</h3>
-                <p>Tratamiento estético que logra dientes más blancos y brillantes.</p>
-            </div>
-            <div class="servicio">
-                <h3>Tratamientos de armonización facial.</h3>
-                <p>Mejorar la apariencia global del rostro al equilibrar sus características y proporciones. Se logra mediante el uso de métodos no quirúrgicos, como ácido hialurónico y neuromoduladores, entre otros.</p>
-            </div>
-            <div class="servicio">
-                <h3>Láser terapia.</h3>
-                <p>Como analgésico, antiinflamatorio, reducción microbiana, bioestimulación en la cicatrización de tejidos superficiales y profundos</p>
-            </div>
-            <div class="servicio">
-                <h3>Odontopediatria.</h3>
-                <p>La prevención a temprana edad es el mejor método para garantizar una boca saludable.</p>
-            </div>
-
-        </section>
-
-        <section id="nosotros">
-            <h2>Conoce a Nuestros Dentistas</h2>
-            <div class="dentista">
-                <img src="/img/Belen.jpg" alt="Dra. Belen Pais">
-                <h3>Dra. Belén País</h3>
-                <p>Experta en ortodoncia y estética dental, brindando sonrisas hermosas y funcionales.</p>
-            </div>
-        </section>
-
-      
-    </main>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Clínica Dental María Belén País</p>
     </footer>
 
-
+    <script src="/js/contacto.js"></script>
 </body>
 </html>

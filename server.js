@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
@@ -42,7 +42,12 @@ app.post("/contactos", async (req, res) => {
     }
 });
 
+// Ruta para probar la API
+app.get("/", (req, res) => {
+    res.send("¡Bienvenido a mi API real!");
+});
+
 // Iniciar el servidor
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+    console.log(`Servidor corriendo en el puerto ${PORT}`);
 });

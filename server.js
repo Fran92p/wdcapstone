@@ -10,12 +10,13 @@ app.use(cors());
 app.use(express.json());
 
 // Conexión a MongoDB
-mongoose.connect(
-    "mongodb+srv://franpaiss:<Fran0725>@wdcapstone.hjneb.mongodb.net/?retryWrites=true&w=majority&appName=Wdcapstone"
-    { useNewUrlParser: true, useUnifiedTopology: true }
-)
+mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
 .then(() => console.log("Conectado a MongoDB Atlas"))
 .catch((error) => console.error("Error al conectar a MongoDB:", error));
+
 
 // Modelo de datos
 const Contacto = mongoose.model("Contacto", {

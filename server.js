@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Conexión a MongoDB
 mongoose.connect(
-    "mongodb+srv://franpaiss:<Fran0725>@wdcapstone.hjneb.mongodb.net/?retryWrites=true&w=majority&appName=Wdcapstone,
+    "mongodb+srv://franpaiss:<Fran0725>@wdcapstone.hjneb.mongodb.net/?retryWrites=true&w=majority&appName=Wdcapstone"
     { useNewUrlParser: true, useUnifiedTopology: true }
 )
 .then(() => console.log("Conectado a MongoDB Atlas"))

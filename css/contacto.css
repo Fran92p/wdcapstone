@@ -16,18 +16,18 @@ h1 {
 }
 
 #contacto {
-    background-color: #D7C2B3;
-    padding: 40px 20px;
+    background-color: #F1F2EF;
+    padding: 30px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
-    align-items: flex-start;
+    gap: 100px;
+    align-items: start;
 }
 
 #contacto-form-container {
     max-width: 45%;
-    background-color: #F1F2EF;
+    background-color: #D7C2B3;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -35,7 +35,8 @@ h1 {
 
 #contacto-form-container h2 {
     font-size: 2.5rem; 
-    color: #2042EA; 
+    color: #091F5A;
+    margin-top: 5px;
     margin-bottom: 20px; 
     text-align: center;
 }
@@ -43,7 +44,7 @@ h1 {
 #contacto-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
 }
 
 #contacto-form label {
@@ -61,8 +62,8 @@ h1 {
 }
 
 #contacto-form button {
-    background-color: #2042EA; 
-    color: #FFFFFF;
+    background-color: #7094CC; 
+    color: #F1F2EF;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 12px 20px;
@@ -83,7 +84,7 @@ h1 {
 
 #instagram-link a {
     font-size: 1rem;
-    color: #2042EA;
+    color: #091F5A;
     text-decoration: none;
 }
 
@@ -98,12 +99,13 @@ h1 {
     gap: 20px;
 }
 
-#mapa-container, #clima-container {
-    background-color: #F8D7E0;
-    padding: 20px;
+#mapa-container{
+    background-color: #D7C2B3;
+    padding: 10px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
+
 
 #mapa {
     border: none;
@@ -119,18 +121,27 @@ h1 {
 #clima-container h3 {
     font-size: 1.5rem;
     color: #2042EA;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 #clima {
     font-size: 1rem;
     color: #091F5A;
+    width: 100%;
 }
 
+#clima-container{
+    background-color: #D7C2B3;
+    padding: 2px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+}
 footer {
     background-color: #091F5A; 
     color: #F1F2EF;
     text-align: center;
-    padding: 15px 0;
+    padding: 5px 0;
     font-size: 0.9rem;
 }
